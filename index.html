@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="mcssam">
+    <meta name="description" content="Portfolio, Float, Montblanc Template">
+    <title>Portfolio, Float, Montblanc Template</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="./images/favicon/montblanc_fav32.png">
+    <link rel="apple-touch-icon=precomposed" href="./images/favicon/montblanc_fav144.png">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/notosans_kr_CDN.css">
+    
+    
+    <!-- 페이지 css -->
+    <!-- js 플러그인 파일 -->
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/prefixfree.min.js"></script>  <!-- prefix(접두어)를 안써도 되는 플러그인 -->
+    <!-- 페이지 JS --> 
+    <!-- 슬라이더를 위한 css,js -->
+    <script src="./js/jquery.bxslider.js"></script>
+    <link rel="stylesheet" href="./css/jquery.bxslider.css">
+    <link rel="stylesheet" href="./css/jquery.bxslider2.css">
+    <!-- 스와이퍼를 위한 css,js -->
+    <link rel="stylesheet" href="./css/montblanc.css">
+    <script>
+        $(function(){
+            $('.slider').bxSlider({
+                pager: false,
+                speed:1000,
+                auto:true,
+                controls: false,
+                autoDelay: 1,
+            });
+            $('.slider2').bxSlider({
+                pager: false,
+                speed:1000,
+                auto:true,
+                controls: true,
+                autoDelay: 5000,
+                slideMargin: 30
+            });
+            $('.slider3').bxSlider({
+                pager: true,
+                speed:1000,
+                auto:true,
+                controls: true,
+                autoDelay: 5000,
+
+            });
+            $('.button').on('click',function(){
+                $('.button').next().hide();
+                $(this).next().slideToggle();
+            });
+            $('.yot > li').on('click',function(){
+                //핑크
+                $('.yot > li').css('background-color','#dcdcdc');
+                $('.yot > li').css({"color":"#000000","font-weight":"400"});
+                //회색
+                $(this).css({"background-color":"#a56fbb","color":"black","font-weight":"700"});
+            });
+            $('.yot1').on('click',function(){
+                $('.you').children().css('display','none');
+                $('.you1').show();
+            });
+            $('.yot2').on('click',function(){
+                $('.you').children().css('display','none');
+                $('.you2').show();
+            });
+            $('.yot3').on('click',function(){
+                $('.you').children().css('display','none');
+                $('.you3').show();
+            });
+            $('.yot4').on('click',function(){
+                $('.you').children().css('display','none');
+                $('.you4').show();
+            });
+            $('nav .gnb li').on('click',function(){
+                $('#gnb2').slideToggle();
+            });
+
+    });
+    </script>
+    <style>
+    </style>
+</head>
+<body>
+    <!-- header -->
+    <div id="wrap">
+            <header>
+            <!-- logo,gnb -->
+                    <nav>
+                        <ul class="gnb w1280">
+                            <li><a href="#">Tigers</a></li>
+                            <li><a href="#">PLAYERS</a></li>
+                            <li><a href="#">CONTENTS</a></li>
+                            <li class="logo"><a href="#"><img src="./images/tigers/logo.svg" alt=""></a></li>
+                            <li><a href="#">GAME</a></li>
+                            <li><a href="#">TICKET</a></li>
+                            <li><a href="#">MEMBERSHIP</a></li>
+                        </ul>
+                    </nav>
+                    <div id="gnb2">
+                        <div class="gnb w1280">
+                            <ul>
+                                <li><a href="#">인사말</a></li>
+                                <li><a href="#">구단소개</a></li>
+                                <li><a href="#">광주-기아 경기장</a></li>
+                                <li><a href="#">챌린저스 경기장</a></li>
+                                <li><a href="#">CI</a></li>
+                                <li><a href="#">역사관</a></li>
+                                <li><a href="#">응원단</a></li>
+                                <li><a href="#">스폰서</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">코칭스태프</a></li>
+                                <li><a href="#">투수</a></li>
+                                <li><a href="#">포수</a></li>
+                                <li><a href="#">내야수</a></li>
+                                <li><a href="#">외야수</a></li>
+                                <li><a href="#">군입대선수</a></li>
+                                <li><a href="#">엔트리현황</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">보도자료</a></li>
+                                <li><a href="#">타이거즈 뉴스</a></li>
+                                <li><a href="#">타이거즈 웹진</a></li>
+                                <li><a href="#">타이거즈 TV</a></li>
+                                <li><a href="#">타이거즈 에피소드</a></li>
+                                <li><a href="#">구단 SNS</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">경기일정/결과</a></li>
+                                <li><a href="#">Tigers Baseball</a></li>
+                                <li><a href="#">생생화보</a></li>
+                                <li><a href="#">STATS</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">입장권 안내 및 예매</a></li>
+                                <li><a href="#">시즌권/게임권 안내</a></li>
+                                <li><a href="#">스카이박스</a></li>
+                                <li><a href="#">홈경기 단체 예매</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">멤버십 안내</a></li>
+                                <li><a href="#">호랑이 사랑방</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">1:1 문의</a></li>
+                            </ul>
+                        </div>
+                    </div>
+            <!-- /gnb -->
+        <!-- Image Text Deco -->
+        <div id="gallery_wrap">
+        <div class="slider">
+            <div class="img_deco">
+                <h2>
+                    2022.09.29(목)
+                </h2>
+                <p>
+                    광주 18:30
+                </p>
+                <ul class="score">
+                    <li>KIA</li>
+                    <li><img src="./images//tigers/logo.svg " alt=""></li>
+                    <li></li>
+                    <li>vs</li>
+                    <li></li>
+                    <li><img src="./images/tigers/teamlogo1.svg" alt=""></li>
+                    <li>LG</li>
+                </ul>
+                <p>
+                    <button><a href="#">경기예정</a></button>
+                </p>
+            </div>
+            <div class="img_deco">
+                <h2>
+                    2022.09.28(수)
+                </h2>
+                <p>
+                    광주 18:30
+                </p>
+                <ul class="score">
+                    <li>KIA</li>
+                    <li><img src="./images//tigers/logo.svg " alt=""></li>
+                    <li>7</li>
+                    <li>vs</li>
+                    <li>3</li>
+                    <li><img src="./images/tigers/teamlogo1.svg" alt=""></li>
+                    <li>LG</li>
+                </ul>
+                <p>
+                    <button><a href="#">경기종료</a></button>
+                </p>
+            </div>
+            <div class="img_deco">
+                <h2>
+                    2022.09.27(화)
+                </h2>
+                <p>
+                    대구 18:30
+                </p>
+                <ul class="score">
+                    <li>KIA</li>
+                    <li><img src="./images//tigers/logo.svg " alt=""></li>
+                    <li>3</li>
+                    <li>vs</li>
+                    <li>0</li>
+                    <li><img src="./images/tigers/teamlogo4.svg" alt=""></li>
+                    <li>삼성</li>
+                </ul>
+                <p>
+                    <button><a href="#">경기종료</a></button>
+                </p>
+            </div>
+            <div class="img_deco">
+                <h2>
+                    2022.09.25(일)
+                </h2>
+                <p>
+                    대구 14:00
+                </p>
+                <ul class="score">
+                    <li>KIA</li>
+                    <li><img src="./images//tigers/logo.svg " alt=""></li>
+                    <li>5</li>
+                    <li>vs</li>
+                    <li>4</li>
+                    <li><img src="./images/tigers/teamlogo4.svg" alt=""></li>
+                    <li>삼성</li>
+                </ul>
+                <p>
+                    <button><a href="#">경기종료</a></button>
+                </p>
+            </div>
+            <div class="img_deco">
+                <h2>
+                    2022.09.24(토)
+                </h2>
+                <p>
+                    광주 14:00
+                </p>
+                <ul class="score">
+                    <li>KIA</li>
+                    <li><img src="./images//tigers/logo.svg " alt=""></li>
+                    <li>11</li>
+                    <li>vs</li>
+                    <li>2</li>
+                    <li><img src="./images/tigers/teamlogo3.svg" alt=""></li>
+                    <li>NC</li>
+                </ul>
+                <p>
+                    <button><a href="#">경기종료</a></button>
+                </p>
+            </div>
+        </div>
+    </div>
+        <!-- Image Text Deco -->
+    </header>
+    <main>
+    <!-- header -->
+    <!-- <section> -->
+        
+        <section class="card_box">
+            <h2><span>Hot</span> Issue</h2>
+                <div id="gallery_wrap2" >
+                    <div class="slider2">
+                        <div class="inslider">
+                        <!-- 3단 card box -->
+                            <div class="card_box_view">
+                                <h2><a href="#"><img src="./images/tigers/cardbox1.jpg" alt="카드이미지1"></a></h2>
+                                <div>
+                                    <a href="#">
+                                        <p>보도자료</p>
+                                        <p>양현종 은퇴식 10월 7일 개최</p>
+                                        <!-- 날짜 -->
+                                        <p></p>
+                                        <p><img src="./images/tigers/calendar.png" alt="달력">2022-09-27</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card_box_view">
+                                <h2><a href="#"><img src="./images/tigers/cardbox2.jpg" alt="카드이미지1"></a></h2>
+                                <div>
+                                    <a href="#">
+                                        <p>타이거즈TV</p>
+                                        <p>"사랑해주신 여러분 덕분에 행복하게 떠납니다"</p>
+                                        <!-- 날짜 -->
+                                        <p><img src="./images/tigers/calendar.png" alt="달력">2022-09-27</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card_box_view">
+                                <h2><a href="#"><img src="./images/tigers/cardbox3.jpg" alt="카드이미지1"></a></h2>
+                                <div>
+                                    <a href="#">
+                                        <p>공지사항</p>
+                                        <p>22년 12월호 웹진 '호랑이는 내친구'발행</p>
+                                        <!-- 날짜 -->
+                                        <p><img src="./images/tigers/calendar.png" alt="달력">2022-09-27</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inslider">
+                            <div class="card_box_view">
+                                <h2><a href="#"><img src="./images/tigers/cardbox4.jpg" alt="카드이미지1"></a></h2>
+                                <div>
+                                    <a href="#">
+                                        <p>타이거즈TV</p>
+                                        <p>양현종의 올해는 어땠나요?</p>
+                                        <!-- 날짜 -->
+                                        <p><img src="./images/tigers/calendar.png" alt="달력">2022-12-27</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card_box_view">
+                                <h2><a href="#"><img src="./images/tigers/cardbox5.jpg" alt="카드이미지1"></a></h2>
+                                <div>
+                                    <a href="#">
+                                        <p>타이거즈 에피소드</p>
+                                        <p>기아스토리 2022 -37화-</p>
+                                        <!-- 날짜 -->
+                                        <p><img src="./images/tigers/calendar.png" alt="달력">2022-09-27</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card_box_view">
+                                <h2><a href="#"><img src="./images/tigers/cardbox6.jpg" alt="카드이미지1"></a></h2>
+                                <div>
+                                    <a href="#">
+                                        <p>서울신문</p>
+                                        <p>KIA 타이거즈 나성범 입단식...'등번호 47번'배정</p>
+                                        <!-- 날짜 -->
+                                        <p><img src="./images/tigers/calendar.png" alt="달력">2022-09-27</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /3단 card box -->
+                <!-- cardbox text -->
+                <div class="card_box_info">
+                    <h2>KIA Tigers 홍보팀 <span>02-334-3242</span></h2>
+                    <p>
+                        <a href="#">전체보기 <img src="./images/arrow_silver.png" alt="화살표"></a>
+                    </p>
+                </div>
+                <!-- /cardbox text -->
+            </div>
+        </section>
+        <section class="about_us w1280">
+            <h2 class="about_us_text">
+                2021 시즌 메이저리그 텍사스 레인저스와 계약을 맺고 미국 무대에 진출했던 양현종 선수는 시즌을 마친 뒤 KBO리그 복귀를 결정하며 다시 타이거즈 유니폼을 입게 되었습니다.<br>
+                또한 고향팀을 떠났던 나성범 선수가 돌아오며 지난 시즌 KIA타이거즈 팀 홈런의 절반에 해당하는 33개의 홈런을 기록하며<br>
+                두 스타의 합류는 KIA타이거즈에 큰 힘이 되어주었습니다.
+            </h2>
+            <div class="line"></div>
+            <div class="about_us_tab">
+                <div>
+                    <h3>기아 올해의 선수</h3>
+                    <p>하만인터내셔널코리아는 프로야구 구단 기아타이거즈와 함께 진행한 2022년 시즌 마케팅을 
+                        ‘하만카돈 올해의 MVP 시상식’으로 마무리했다고 30일 밝혔다.</p>
+                    <p>하만은 전날 기아타이거즈 대 롯데자이언츠 경기가 시작되기 전 
+                        광주 홈구장에서 올해의 MVP 시상식을 개최했다. 2022시즌 ‘하만카돈 올해의 MVP’에는 
+                        팀 승률에 크게 기여한 <strong>투수 양현종 선수</strong>, <strong>타자 나성범 선수</strong>가 선정됐다.
+                        내야수 박찬호 선수는 기량 발전상을 받았다.</p>
+
+                    <p>시상은 하만인터내셔널코리아 오토모티브 영업 총괄 양승혁 전무가 맡았다. 하만은 MVP 수상자들에게 부상으로 하만카돈 프리미엄 무선 홈 오디오 시스템 ‘래디언스 2400’을 증정했다.</p>
+                </div>
+                <div class="right">
+                    <img src="./images/tigers/MVP1.jpg" alt="">
+                    <img src="./images/tigers/MVP2.jpg" alt="">
+                </div>
+            </div>
+        </section>
+    <!-- </section> -->
+    <!-- article mov -->
+    <section class="real_title">
+        <h2 class="real_time w1280">
+            <ul class="yot">
+                <h5><span>타이거즈 공식 유튜브</span></h5>
+                <li class="yot1">#최고의 응원가는?</li>
+                <li class="yot2">#타이거즈 40주년 기념</li>
+                <li class="yot3">#선수들의 필수템은?</li>
+                <li class="yot4">#이종범vs선동렬</li>
+                <p><a href="https://www.youtube.com/@kiabaseballclub" target="_blank">#갸티비 by KIA타이거즈</a></p>
+            </ul>
+            <div class="you">
+                <div class="you1"><iframe width="720" height="480" src="https://www.youtube.com/embed/VLmipHSySIM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div class="you2"><iframe width="720" height="480" src="https://www.youtube.com/embed/zkb9v1jLjhM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div class="you3"><iframe width="720" height="480" src="https://www.youtube.com/embed/bK0t_POBalM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div class="you4"><iframe width="720" height="480" src="https://www.youtube.com/embed/PvYRATEff-M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            </div>
+        </h2>
+    </section>
+    <!-- /article mov -->
+    <!-- section why -->
+    <section class="about_us w1280">
+        <div class="line"></div>
+        <div class="about_us_tab">
+            <div class="right">
+                <img src="./images/tigers/retire.png" alt="">
+                <img src="./images/tigers/retire2.jpeg" alt="">
+            </div>
+            <div>
+                <h3>'한국시리즈의 사나이' 나지완 은퇴</h3>
+                <p>‘타이거즈 최다 홈런 타자’ <span>나지완(37·KIA 타이거즈)</span>이 은퇴를 결정했습니다.</p>
+                <p>나지완 선수는 1일 오후 구단과의 면담에서 현역 생활을 마무리하겠다는 뜻을 전달했고, 구단은 나지완의 뜻을 받아들였습니다. </p>
+
+                <p>나지완 선수는 "후배들과 팀의 미래를 위해 깊은 고민 끝에 현역 선수 생활을 마무리하기로 결심했다"면서
+                     팬들에게 받은 사랑을 마음속 깊이 새기며 살겠다”고 전했습니다.</p>
+            </div>
+        </div>
+    </section>
+        <!-- section why -->
+        <!-- <section> FAQ -->
+            <section class="faq_saying">
+                <div class="faq_people w1280">
+                    <div>
+                        <h4>FAQ</h4>
+                        <div class="faq">
+                            <div class="button">
+                                <span>[우천취소]</span> 우천취소는 언제 결정되나요
+                            </div>
+                            <p>
+                                우천 취소가 결정되는 시간은 특정되어 있지 않습니다.
+                                경기 전에는 KBO 경기운영위원의 판단에 따라 결정되며, 
+                                경기 중에는 심판의 판단하에 결정됩니다.
+                            </p>
+                        </div>
+                        <div class="faq">
+                            <div class="button">
+                                <span>[예매취소/환불]</span> 예매한 티켓을 취소하고 싶어요
+                            </div>
+                            <p>
+                                예매 취소는 경기 시작 2시간 전까지 가능합니다.<br>
+                                경기 당일 현장에서는 예매권 취소 및 환불이 되지 않으므로, 예매 시 주의하시기 바랍니다.<br>
+                                ※ 예매 당일 취소 시에는 수수료가 발생하지 않으나, 다음날부터는 취소수수료가 발생합니다.<br><br>
+
+                                ■ 티켓 취소 방법(KIA 타이거즈 홈페이지)<br>
+                                홈페이지 우측 상단 TICKET > 입장권 안내 및 예매 >입장권 예매 > 마이페이지<br>
+                                ■ 티켓 취소 방법(KIA 타이거즈 앱)<br>
+                                KIA 타이거즈 앱 > 티켓보관함(우측 상단) > 예매내역 > 예매 취소하기<br>
+                                ■ 티켓 취소 방법(티켓링크 앱)<br>
+                                티켓링크 앱 > 마이페이지 > 예매확인/취소<br><br>
+
+                                ※ 티켓링크 이용 시 추가 문의사항은 070-8191-7890 (티켓링크 광주지사 고객센터, 평일 10시~18시) 또는 1588-7890 (티켓링크 고객센터)로 문의 바랍니다.<br>
+                            </p>
+                        </div>
+                        <div class="faq">
+                            <div class="button">
+                                <span>[멤버십/회원]</span> '무료 예매권'은 어떻게 사용하나요
+                            </div>
+                            <p>
+                                무료 예매권은 KIA 타이거즈 앱 회원분께 드리는 혜택으로 가입 및 등급 승급 시 받으실 수 있습니다.<br><br>
+                                ■ 무료예매권 사용 방법<br><br>
+                                KIA 타이거즈 앱 > 티켓보관함(우측 상단) > 예매내역 > 예매하기 > 해당 경기 > 예매권에 맞는 좌석 선택 > 결제 시 ‘무료예매권’ 사용<br><br>
+                            </p>
+                        </div>
+                        <div class="faq">
+                            <div class="button">
+                                <span>[입장권]</span> 현장 매표소에서 티켓 구입 가능한가요
+                            </div>
+                            <p>
+                                네, 경기 시작 2시간 전부터 현장에서 티켓을 구매하실 수 있습니다.(당일 경기 한정)<br><br>
+                                ※ 무인발권기를 통해서는 예매 티켓의 지류 발급만 가능합니다.<br><br>
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <h4>찾아오시는 길</h4>
+                        <div class="faq2">
+                            <div class="ride_title">
+                                광주역 -> 광주 기아 경기장
+                            </div>
+                            <div class="rideride">
+                                <div class="ride">
+                                    <p>버스</p>
+                                    <p>택시</p>
+                                </div>
+                                <div class="comein">
+                                    <div>금남 임곡89, 송정98, 지원151 광주역 정류소 승차 → 광주-기아 챔피언스필드 정류소 하차</div>
+                                    <div>10∼15분 소요</div>
+                                </div>
+                            </div>
+                        </div>   
+                        <div class="faq2">
+                            <div class="ride_title">
+                                광천 버스터미널 -> 광주 기아 경기장
+                            </div>
+                            <div class="rideride">
+                                <div class="ride">
+                                    <p>버스</p>
+                                    <p>택시</p>
+                                </div>
+                                <div class="comein">
+                                    <div>풍암16 광천터미널 정류소 승차 → 광주-기아 챔피언스필드 정류소 하차 지원151 광천터미널 정류소 승차 → 광주-기아 챔피언스필드 정류소 하차</div>
+                                    <div>25∼30분 소요</div>
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+            </section>
+        <!-- </section> FAQ-->
+        <!-- <aside banner> -->
+            <section class="banner">
+                <div class="slider3">
+                    <a href="#"><img src="./images/tigers/shop2.jpg" alt="타이거즈 샵"></a>
+                    <a href="#"><img src="./images/tigers/shop3.jpg" alt="타이거즈 샵"></a>
+                    <a href="#"><img src="./images/tigers/shop4.jpg" alt="타이거즈 샵"></a>
+                    <a href="#"><img src="./images/tigers/shop5.jpg" alt="타이거즈 샵"></a>
+                    <a href="#"><img src="./images/tigers/shop6.jpg" alt="타이거즈 샵"></a>
+                </div>
+            </section>
+            <!-- </aside banner> -->
+        </main>
+            <!-- <footer> -->
+                <footer class="footer">
+                    <div class="w1280">
+                        <!-- /footer logo, sns -->
+                        <dl class="footer_logo cf">
+                            <dt><img src="./images/tigers/logo.svg" alt="로고"></dt>
+                        <dd>
+                            KIA타이거즈는 11번의 한국시리즈를 제패한 KBO리그의 최고 명문 구단입니다.<br>
+                             지난 2009년 정규시즌과 한국시리즈 통합우승을 차지했던 KIA는 2017년 <br>
+                             다시 통합우승을 차지하며 전통의 명가 지위를 공고히 했습니다.
+                        </dd>
+                        <dd class="sns"><a href="#"><img src="./images/sns_facebook.png" alt=""></a></dd>
+                        <dd class="sns"><a href="#"><img src="./images/sns_twitter.png" alt=""></a></dd>
+                        <dd class="sns"><a href="#"><img src="./images/sns_insta.png" alt=""></a></dd>
+                        <dd class="sns"><a href="#"><img src="./images/sns_naver.png" alt=""></a></dd>
+                    </dl>
+                    <!-- /footer logo, sns -->
+                    <!-- footer seives -->
+                    <dl class="footer_services cf">
+                        <dt>구단</dt>
+                        <dd><a href="#">구단&nbsp;소개</a></dd>
+                        <dd><a href="#">구단&nbsp;소식</a></dd>
+                        <dd><a href="#">히스토리</a></dd>
+                        <dd><a href="#">엠블럼/캐릭터</a></dd>
+                        <dd><a href="#">GO!타이거즈</a></dd>
+                        <dd><a href="#">타이거즈&nbsp;파트너</a></dd>
+                    </dl>
+                    <!-- /footer seives -->
+                    <!-- Footer Assistance -->
+                    <dl class="footer_assistance">
+                        <dt>선수단</dt>
+                        <dd><a href="#">김종국&nbsp;감독</a></dd>
+                        <dd><a href="#">코칭스텝</a></dd>
+                        <dd><a href="#">투수</a></dd>
+                        <dd><a href="#">타자</a></dd>
+                        <dd><a href="#">군입대&nbsp;선수</a></dd>
+                        <dd><a href="#">신인&nbsp;선수</a></dd>
+                    </dl>
+                    <!-- /Footer Assistance -->
+                    <!-- footer about -->
+                    <dl class="footer_about">
+                        <dt>팬</dt>
+                        <dd><a href="#">사자후</a></dd>
+                        <dd><a href="#">FAQ</a></dd>
+                        <dd><a href="#">타이거즈&nbsp;스토리</a></dd>
+                        <dd><a href="#">월페이퍼</a></dd>
+                        <dd><a href="#">팬클럽</a></dd>
+                        <dd><a href="#">치어리더</a></dd>
+                    </dl>
+                    <!-- /footer about -->
+                    <!-- Copyright -->
+                    <div class="copyright">
+                        <div class="copyright_line">
+                            <p>
+                                <br><br>&copy; 2022 KIA Tigers
+                            </p>
+                        </div>
+                    </div>
+                    <!-- /Copyright -->
+                </div>
+            </footer>
+        <!-- </footer> -->
+        </div>
+</body>
+</html>
